@@ -780,4 +780,61 @@ footer {
     font-size: 0.8rem;
     font-weight: 600;
     letter-spacing: 1px;
+}/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  /* Navigation Menu Fix */
+  .navbar {
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+  }
+  
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* Text & Heading Size Adjustment */
+  .hero-name {
+    font-size: 2rem !important;
+  }
+
+  .hero-title {
+    font-size: 1.2rem !important;
+  }
+
+  .hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  /* All Multi-column Layouts to Single Column */
+  .about-grid,
+  .services-grid,
+  .projects-grid,
+  .contact-grid,
+  .learning-grid,
+  .certificates-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Skills Badges Layout Fix */
+  .skills-orbit-container {
+    height: auto !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 20px 0;
+  }
+
+  .orbit-ring {
+    display: none;
+  }
+
+  .orbit-badge {
+    position: static !important;
+    transform: none !important;
+  }
 }
